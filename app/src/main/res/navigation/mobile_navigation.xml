@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_upload">
+
+    <fragment
+        android:id="@+id/nav_upload"
+        android:name="com.example.calculationworkkorbachdmytro.ui.upload.UploadFragment"
+        android:label="@string/menu_upload"
+        tools:layout="@layout/fragment_upload" />
+
+    <fragment
+        android:id="@+id/nav_download"
+        android:name="com.example.calculationworkkorbachdmytro.ui.download.DownloadFragment"
+        android:label="@string/menu_download"
+        tools:layout="@layout/fragment_download" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.calculationworkkorbachdmytro.ui.setting.SettingFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_setting" />
+    <activity
+        android:id="@+id/nav_info"
+        android:name="com.example.calculationworkkorbachdmytro.info.InfoActivity"
+        android:label="@string/menu_info"
+        tools:layout="@layout/activity_info" />
+</navigation>
